@@ -1,0 +1,59 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 10px;
+}
+
+p {
+    color: azure;
+}
+
+li {
+    color: azure;
+}
+
+h3 {
+    color: azure;
+}
+
+h1 {
+    color: azure;
+}
+.wrapper{
+ width: 950px;
+ background-color: #618685;
+}
+.header{
+ height: 70px;
+ background-color: #c83349;
+ margin: 10px;
+ border-radius: 20px;
+}
+.sidebar{
+ height: 500px;
+ width: 150px;
+ display: inline-block;
+ background-color: #77a8a8;
+ vertical-align: top;
+ display: inline-block;
+ margin: 5px;
+ padding: 15px;
+ border-radius: 20px;
+}
+.content{
+ height: 660px;
+ width: 700px;
+ display: inline-block;
+ background-color: #3b3a30;
+ display: inline-block;
+ margin: 5px;
+ padding: 20px;
+ border-radius: 20px;
+}
+.footer{
+ height: 50px;
+ width: 660px;
+ background-color: #b9b0b0;
+ margin: 5px;
+ border-radius: 20px;
+}
