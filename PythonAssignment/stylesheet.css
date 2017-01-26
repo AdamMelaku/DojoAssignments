@@ -1,0 +1,105 @@
+.Top{
+  background-color: #034f84;
+}
+.Bottom{
+  background-color: #034f84;
+  text-align: center;
+  color: white;
+}
+h2{
+  color: white;
+}
+h3{
+  text-align: center;
+}
+.Image{
+    display: inline-block;
+    width: 45%;
+}
+.Search{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+p{
+  color: white;
+}
+.searchbar{
+  display: inline-block;
+  vertical-align: top;
+  background-color: grey;
+  padding:20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 290px;
+}
+.Content{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+.Menu {
+    margin-left: 100px;
+    margin-right:100px;
+    list-style-type:none;
+    padding: 0px;
+    height: 60px;
+    text-align: center;
+    background-color: lightsteelblue;
+    font-family: Arial;
+    font-size:0.9em;
+    border-radius: 15px;
+}
+.Menu li {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+li a{
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.Backdrop a{
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.Content p{
+  color: black;
+  text-align: center;
+}
+.Resources ul{
+  list-style-type: none;
+}
+.Content ul{
+  list-style-type:square;
+}
+li a:hover {
+    background-color:lightgrey;
+    text-decoration:none;
+}
+.Special {
+  color: yellow;
+  font-style: italic;
+}
+.Information{
+  display: inline-block;
+  width: 45%;
+}
+.Bottom h3{
+  display: inline-block;
+  margin: 20px;
+}
+.Resources{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+.Information2{
+  text-align: center;
+}
