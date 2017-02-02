@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+
+
+
+    $(document).ready(function(){
+
+        $("button").on("click", function(e){
+
+      e.preventDefault();
+      var first_name =$("form").find("input[name=first_name]").val();
+      var last_name =$("form").find("input[name=last_name]").val();
+      var email_address = $("form").find("input[name=email_address]").val();
+      var contact_no = $("form").find("input[name=contact_no]").val();
+
+      $("th:nth-of-type(1)").append(first_name);
+      $("th:nth-of-type(2)").append(last_name);
+      $("th:nth-of-type(3)").append(email_address);
+      $("th:nth-of-type(4)").append(contact_no);
+    });
+    })
+    </script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name:</th>
+          <th>Second Name:</th>
+          <th>Email Address:</th>
+          <th>Contact #:</th>
+        </tr>
+      </thead>
+    </table>
+    <hr>
+    <h1>Add Users</h1>
+    <hr>
+    <form>
+      <label style="display:inline-block" for="first_name">First Name:</label>
+      <input style="display:inline-block" type="text" name="first_name" value="">
+      <br>
+      <label style="display:inline-block" for="last_name">Last Name:</label>
+      <input style="display:inline-block" type="text" name="last_name" value="">
+      <br>
+      <label style="display:inline-block" for="email_address">Email Address:</label>
+      <input style="display:inline-block" type="text" name="email_address" value="">
+      <br>
+      <label style="display:inline-block" for="contact_no">Contact Number:</label>
+      <input style="display:inline-block" type="text" name="contact_no" value="">
+      <br>
+      <button type="submit" name="button">Add User</button>
+    </form>
+
+  </body>
+</html>

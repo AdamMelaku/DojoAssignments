@@ -1,0 +1,23 @@
+.Wrapper{
+	display: block;
+	border: 1px solid black;
+	width: 300px;
+}
+.Output{
+	display: block;
+}
+.Card{
+	display: inline-block;
+  border: 1px solid black;
+  margin: 78px
+}
+div#first_name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+div#last_name {
+    margin-bottom: 10px;
+}
+div#description {
+    margin-bottom: 10px;
+}

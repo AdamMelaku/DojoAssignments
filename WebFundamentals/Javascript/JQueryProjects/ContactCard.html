@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+      $(document).on("click","button",function(){
+
+       var first_name =$("form").find("input[name=first_name]").val();
+        var last_name =$("form").find("input[name=last_name]").val();
+        var description =$("form").find("textarea[name=description]").val();
+
+        $("#Output").append("<div class='Card'><h2>"+first_name+ last_name +"</h2><p>"+description+"</p></div>");
+      })
+    </script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <form>
+        <div id="first_name">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" value="">
+      </div>
+      <div id="last_name">
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" value="">
+      </div>
+      <div id="description">
+        <label for="description">Description:</label>
+        <textarea name="description" rows="8" cols="33"></textarea>
+      </div>
+      </form>
+      <button type="button" name="button">Add User</button>
+    </div>
+    <div id="Output">
+      <div class="Card">
+        <h2>Adam Melaku</h2>
+        <p>Desctipiton Here</p>
+      </div>
+      <div class="Card">
+        <h2>Adam Melaku</h2>
+        <p>Desctipiton Here</p>
+      </div>
+      <div class="Card">
+        <h2>Adam Melaku</h2>
+        <p>Desctipiton Here</p>
+      </div>
+    </div>
+  </body>
+</html>

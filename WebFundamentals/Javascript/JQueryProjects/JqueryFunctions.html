@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Basic Assignment</title>
+
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#activate1").click(function(){
+        $("#test1").addClass("red");
+            });
+
+      $("#activate2").click(function(){
+        $("#test2").slideToggle(100);
+      })
+
+      $("#activate3").click(function(){
+        $("#test3").append("<p>See it work</p>");
+      })
+
+    });
+    </script>
+  </head>
+  <body>
+    <div class="AddClass">
+      <h1>AddClass</h1>
+      <p id="test1">Click the button add class 'red' to this paragraph</p>
+      <button type="button" name="button" id="activate1">AddClass</button>
+
+    </div>
+    <hr>
+    <div class="Slidetoggle">
+      <h1>Slidetoggle</h1>
+      <p>Click the button to slidetoggle a hidden image.</p>
+      <img style="display:none;" src="http://www.imagesfromtexas.com/images/xl/Dallas-Skyline-before-Sunset-612-3.jpg" alt="City of Dallas Skyline" id="test2">
+      <button type="button" name="button" id="activate2">Slidetoggle</button>
+    </div>
+    <hr>
+    <div class="Append">
+      <h1>Append</h1>
+      <p id="test3">Click the button to append a new paragraph.</p>
+      <button type="button" name="button" id="activate3">Append</button>
+    </div>
+  </body>
+</html>

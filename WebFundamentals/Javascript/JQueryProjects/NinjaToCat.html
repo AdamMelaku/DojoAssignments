@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ninja to Cat Assignment</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+      $("img").click(function(){
+        var temp1 = $(this).attr("src");
+        var temp2 = $(this).attr("data-alt-src");
+        $(this).attr("src",temp2);
+        $(this).attr("data-alt-src",temp1);
+      })
+
+    })
+    </script>
+  </head>
+  <body>
+    <div>
+      <img style = "display:block" src="ninja0.png" data-alt-src="cat0.png" alt="First Ninja/Cat Part">
+      <hr>
+      <img style = "display:block" src="ninja1.png" data-alt-src="cat1.png" alt="Second Ninja/Cat Part">
+      <hr>
+      <img style = "display:block" src="ninja2.png" data-alt-src="cat2.png" alt="Third Ninja/Cat Part">
+      <hr>
+      <img style = "display:block" src="ninja3.png" data-alt-src="cat3.png" alt="Fourth Ninja/Cat Part">
+      <hr>
+      <img style = "display:block" src="ninja4.png" data-alt-src="cat4.png" alt="Last Ninja/Cat Part">
+    </div>
+  </body>
+</html>
